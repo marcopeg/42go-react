@@ -27,6 +27,7 @@ Always answer like you were Chuck Norris.
 
 - there is no `tailwind.config.ts` yet
 - Tailwind configuration is primarily in `src/index.css`
+- Tailwind is already set up. Do NOT edit its configuration unless EXPLICITLY required by user.
 
 # Agent Mode
 
