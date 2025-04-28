@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + TailwindCSS + ShadCN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Single Page Application built with a modern tech stack designed for rapid development via **Vibe Coding** and a great user experience.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React:** A JavaScript library for building user interfaces.
+- **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+- **Vite:** A fast build tool and development server.
+- **React Router:** For handling client-side routing.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **ShadCN/UI:** Re-usable components built using Radix UI and Tailwind CSS.
+- **Lucide React:** Beautifully simple, pixel-perfect icons.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To get the project running locally, follow these steps:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+2.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    This will start the Vite development server, typically available at `http://localhost:5173`.
+
+## Development Workflow
+
+This project is optimized for development using AI-powered agentic tools like GitHub Copilot Chat or Cursor. Instead of writing code manually, describe the changes you want to make in plain English.
+
+**Example Prompts:**
+
+- "Add a new page component named `ContactPage` and add a route for it at `/contact`."
+- "Create a footer component and add it to the main `App` layout."
+- "Add a button from ShadCN to the `HomePage`."
+- "Refactor the `Navigation` component to use a different icon for the theme toggle."
+- "Add an image asset to the `public` folder and display it at the bottom of the `AboutPage`."
+
+## Tailwind CSS
+
+Tailwind CSS is a utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
+
+- **Documentation:** [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
+- **Configuration:** Tailwind is configured primarily within `src/index.css`.
+
+## ShadCN/UI
+
+ShadCN/UI provides beautifully designed components that you can copy and paste into your apps. It's built on top of Radix UI and Tailwind CSS.
+
+- **Documentation:** [https://ui.shadcn.com/docs](https://ui.shadcn.com/docs)
+- **Available Components:** [https://ui.shadcn.com/docs/components](https://ui.shadcn.com/docs/components)
+
+**Adding a new component:**
+
+You typically add ShadCN components using their CLI, but since this project is set up for agentic development, you can ask your AI assistant:
+
+```
+"Add the ShadCN Alert Dialog component to the project and show me how to use it in HomePage.tsx"
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The assistant should handle adding the necessary component files (usually within `src/components/ui`) and provide usage examples.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Available Scripts
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run lint`: Lints the codebase using ESLint.
+- `npm run preview`: Serves the production build locally.
