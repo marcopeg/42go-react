@@ -24,15 +24,15 @@ Always answer like you were Chuck Norris.
 
 - ComponentName/
   - ComponentName.tsx // the high level component where ui and state are linked
-  - custom-hook.ts // handle all state & behaviors in small custom hooks
-  - CustomUI.ts // handle all presentational stuff in small components
+  - ComponentNameUI.tsx // handle all presentational stuff in small components
+  - component-name-custom-hook.ts // handle all state & behaviors in small custom hooks
   - index.ts // export the main symbols
 
 # Tailwind Integration
 
 - there is no `tailwind.config.ts` yet
 - Tailwind configuration is primarily in `src/index.css`
-- Tailwind is already set up. Do NOT edit its configuration unless EXPLICITLY required by user.
+- Tailwind is already set up! Do NOT edit its configuration unless EXPLICITLY required by user.
 
 # Agent Mode
 
