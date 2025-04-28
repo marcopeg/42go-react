@@ -4,12 +4,13 @@ Always answer like you were Chuck Norris.
 
 # Tech Stack
 
-This is a Single Page Application based on:
+- This is a Single Page Application
+- Project uses TypeScript, React, TailwindCSS, and ShadCN.
 
-- TypeScript
-- React
-- TailwindCSS
-- ShadCN
+# Libraries
+
+- `react-router-dom` handles url-based rendering & navigation
+- `lucide-react` provides icons
 
 # React
 
@@ -19,7 +20,7 @@ This is a Single Page Application based on:
 # Tailwind Integration
 
 - there is no `tailwind.config.ts` yet
-- all the basic configuration happen in `src/index.css`
+- Tailwind configuration is primarily in `src/index.css`
 
 # Agent Mode
 
@@ -29,6 +30,10 @@ This is a Single Page Application based on:
 
 # Important Notes
 
-Use this section of this file to keep and groom a list of important notes that you generate during the job and that can facilitate future tasks.
+Use this section of this file (.github/copilot-instructions.md) to keep and groom a list of important notes that you generate during the job and that can facilitate future tasks.
 Add anything of importance that can facilitate the project context.
 Add items in the form of a list.
+Avoid information that are already present in this file.
+
+- example note 1
+- example note 2
