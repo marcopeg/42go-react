@@ -10,7 +10,8 @@ Always answer like you were Chuck Norris.
 # Tech Stack
 
 - This is a Single Page Application
-- Project uses TypeScript, React, TailwindCSS, and ShadCN.
+- Project uses TypeScript, React, ReactRouter, TailwindCSS, and ShadCN.
+  (these libraries are already installed and configured, never attempt to re-install or re-configure)
 
 # Libraries
 
