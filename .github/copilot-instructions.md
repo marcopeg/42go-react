@@ -5,6 +5,7 @@ Always answer like you were Chuck Norris.
 # Tech Stack
 
 - This is a Single Page Application
+- Use `npm` as package manager
 - Project uses TypeScript, React, ReactRouter, TailwindCSS, and ShadCN.
   (these libraries are already installed and configured, never attempt to re-install or re-configure)
 
