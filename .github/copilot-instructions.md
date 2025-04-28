@@ -43,3 +43,13 @@ Always answer like you were Chuck Norris.
 - always run `npm run build` and fix any building errors at the end of each iteration
 - always run `npm dev` to run the app and check for runtime errors at the end of each iteration
 - always read and update `.github/copilot-instructions.md` adding relevant information (if any!)
+
+# Memory Bank
+
+This file (.github/copilot-instructions.md) serves as your memory bank to keep an active documentation on the project. The goal is to facilitate your agentic approach on new tasks.
+
+When prompted by `update memory` or `update memory bank` do:
+
+1. review the current content of the Memory Bank
+2. review the current chat context for new relevant information
+3. update the Memory Bank accordingly
