@@ -28,4 +28,5 @@ Always answer like you were Chuck Norris.
 - always check for available libraries before installing new ones
 - always run `npm run lint` and fix any linting errors at the end of each iteration
 - always run `npm run build` and fix any building errors at the end of each iteration
+- always run `npm dev` to run the app and check for runtime errors at the end of each iteration
 - always read and update `.github/copilot-instructions.md` adding relevant information (if any!)
