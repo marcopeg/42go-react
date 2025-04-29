@@ -28,13 +28,13 @@ Always answer like you were Chuck Norris.
 - ComponentName/
   - ComponentName.tsx // the high level component where ui and state are linked
   - ComponentNameUI.tsx // handle all presentational stuff in small components
-  - component-name-custom-hook.ts // handle all state & behaviors in small custom hooks
+  - useComponentName.ts // handle all state & behaviors in small custom hooks
   - index.ts // export the main symbols
 
 **Project Folders Layout:**
 
-- pages: store top-level components for routing
-- components: store
+- pages: store top-level components for routing (`src/pages`)
+- components: store reusable components (`src/components`)
 
 # Tailwind & ShadCN Integration
 
@@ -70,20 +70,32 @@ This file (.github/copilot-instructions.md) serves as your memory bank to keep a
 When prompted by `update memory` or `update memory bank` do:
 
 1. review the current content of the Memory Bank
-2. review the current chat context for new relevant information
+2. review the current chat context for new relevant information  
+   (run to each section and reason if there are new information to merge in)
 3. update the Memory Bank accordingly
 
 # Features
 
 - Toggle light/dark theme in `components/ThemeToggle.tsx`
-- Basic routing example in `App.txt`, `components/Navigation.tsx`, `pages/AboutPage.tsx`, `pages/HomePage.tsx` (replace as need or remove)
+- Basic routing example in `App.tsx`, `components/Navigation.tsx`, `pages/AboutPage.tsx`, `pages/HomePage.tsx` (replace as need or remove)
 
 # Backlog
 
-[[place here your future tasks]]
+- [ ] next task
+- [ ] next task
+
+# Last Feature
+
+Describe the last feature that was managed in the project:
 
 # Current Focus
 
+Describe what is the focus of the current task (if any task is still open):
+
 # Struggles
 
+Describe what are the problems that seem to be difficult to solve (if any):
+
 # Tech Debt
+
+Describe what technical debt we are building (if any):
