@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom"; // Removed Link
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { HomePage } from "@/components/HomePage";
-import { AboutPage } from "@/components/AboutPage";
+import { HomePage } from "@/pages/HomePage";
+import { AboutPage } from "@/pages/AboutPage";
 import { Navigation } from "@/components/Navigation"; // Import Navigation
 
 function App() {

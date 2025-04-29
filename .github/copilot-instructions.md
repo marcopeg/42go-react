@@ -14,8 +14,9 @@ Always answer like you were Chuck Norris.
 - `react-router-dom` handles url-based rendering & navigation
 - `lucide-react` provides icons
 
-# React
+# Coding Style & React
 
+- adopt code styling defaults from `esling.config.js` and `.vscode/settings.json`
 - prefer arrow functions `const a = () => {}` over `function a () {}`
 - always split hooks, pure ui components, and containers in separated files
 - avoid importing `React` if not strictly required by the specific implementation
@@ -29,31 +30,18 @@ Always answer like you were Chuck Norris.
   - component-name-custom-hook.ts // handle all state & behaviors in small custom hooks
   - index.ts // export the main symbols
 
-# Tailwind Integration
+**Project Folders Layout:**
+
+- pages: store top-level components for routing
+- components: store
+
+# Tailwind & ShadCN Integration
 
 - Tailwind configuration is primarily in `src/index.css` and `tailwind.config.ts`.
 - Tailwind is already set up! Do NOT edit its configuration unless EXPLICITLY required by user.
+- Use ShadCN to install new components: `npx shadcn@latest add {componentName}`
 
-# Agent Mode
-
-- always outline your tought chain and solution plan before you act
-- always check for available libraries before installing new ones
-- always run `npm run lint` and fix any linting errors at the end of each iteration
-- always run `npm run build` and fix any building errors at the end of each iteration
-- always run `npm dev` to run the app and check for runtime errors at the end of each iteration
-- always read and update `.github/copilot-instructions.md` adding relevant information (if any!)
-
-# Memory Bank
-
-This file (.github/copilot-instructions.md) serves as your memory bank to keep an active documentation on the project. The goal is to facilitate your agentic approach on new tasks.
-
-When prompted by `update memory` or `update memory bank` do:
-
-1. review the current content of the Memory Bank
-2. review the current chat context for new relevant information
-3. update the Memory Bank accordingly
-
-## Core Rules
+# Core Rules
 
 You have two modes of operation:
 
@@ -66,3 +54,35 @@ You have two modes of operation:
 - You will move back to plan mode after every response and when the user types `PLAN`.
 - If the user asks you to take an action while in plan mode you will remind them that you are in plan mode and that they need to approve the plan first.
 - When in plan mode always output the full updated plan in every response.
+
+# Agent Mode
+
+- always check for available libraries in `package.json` before installing new ones
+- always run `npm run lint` and fix any linting errors at the end of each iteration
+- always run `npm run build` and fix any building errors at the end of each iteration
+- always run `npm dev` to run the app and check for runtime errors at the end of each iteration
+
+# Memory Bank
+
+This file (.github/copilot-instructions.md) serves as your memory bank to keep an active documentation on the project. The goal is to facilitate your agentic approach on new tasks.
+
+When prompted by `update memory` or `update memory bank` do:
+
+1. review the current content of the Memory Bank
+2. review the current chat context for new relevant information
+3. update the Memory Bank accordingly
+
+# Features
+
+- Toggle light/dark theme in `components/ThemeToggle.tsx`
+- Basic routing example in `App.txt`, `components/Navigation.tsx`, `pages/AboutPage.tsx`, `pages/HomePage.tsx` (replace as need or remove)
+
+# Backlog
+
+[[place here your future tasks]]
+
+# Current Focus
+
+# Struggles
+
+# Tech Debt
