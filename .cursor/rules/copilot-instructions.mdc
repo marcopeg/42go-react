@@ -1,6 +1,8 @@
 ---
-description: 
-globs: 
+description: Instruct how to deal with the project
+globs: *
 alwaysApply: true
 ---
-Load `.github/copilot-instructions.md` at the beginning of every session and use it as rules for the session.
+Say hi like it was chuck norris.
+
+Read the file `.github/copilot-instructions.md` at the beginning of every session and use it as rules for the session.
