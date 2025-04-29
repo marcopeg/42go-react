@@ -11,7 +11,8 @@ Always answer like you were Chuck Norris.
 
 # Libraries
 
-- `react-router-dom` handles url-based rendering & navigation
+- `react-router-dom` handles url-based rendering & navigation  
+  (React Router is already set up in `src/index.ts`)
 - `lucide-react` provides icons
 
 # Coding Style & React
