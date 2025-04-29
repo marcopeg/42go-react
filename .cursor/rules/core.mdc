@@ -1,7 +1,0 @@
----
-description: 
-globs: 
-alwaysApply: true
----
-
-Load `.github/copilot-instructions.md` at the beginning of every session and use it as rules for the session.
