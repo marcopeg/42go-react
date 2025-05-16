@@ -17,7 +17,7 @@ Always answer like you were Chuck Norris.
 
 # Coding Style & React
 
-- adopt code styling defaults from `esling.config.js` and `.vscode/settings.json`
+- adopt code styling defaults from `eslint.config.js` and `.vscode/settings.json`
 - prefer arrow functions `const a = () => {}` over `function a () {}`
 - always split hooks, pure ui components, and containers in separated files
 - avoid importing `React` if not strictly required by the specific implementation
